@@ -12,10 +12,10 @@
 
     </head>
     <body>
-        <header>HEADER HERE</header>
+        @include('partials.header')
 
         <main>@yield('content')</main>
 
-        <footer>FOOTER HERE</footer>
+        @include('partials.footer')
     </body>
 </html>
