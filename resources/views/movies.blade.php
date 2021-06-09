@@ -1,11 +1,20 @@
-<header>
-    <h1>MOVIES HERE</h1>
-</header>
+@extends('layouts.main')
 
+
+@section('content')
 <main>
-    <h2>CONTENT HERE</h2>
+    <div class="container movies">
+        <div class="cards">
+            @foreach ($movies as $movie)
+                <div class="card">
+                    <h3>{{$movie['title']}}</h3>
+                    <h3>{{$movie['original_title']}}</h3>
+                    <p>{{$movie['nationality']}}</p>
+                    <p>{{$movie['date']}}</p>
+                    <p>{{$movie['vote']}}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
 </main>
-
-<footer>
-    FOOTER HERE
-</footer>
+@endsection

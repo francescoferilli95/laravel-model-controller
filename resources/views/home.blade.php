@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        <h1>CONTENT HERE</h1>
+        <p class="text">Click on the link above to see my Movies Collection!</p>
     </div>
 @endsection

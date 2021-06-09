@@ -1,1 +1,64 @@
-//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    height: calc(100vh - 180px);
+    background: #333;
+    color: #f2f2f2;
+}
+
+h1 {
+    margin-bottom: 1.2rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    li {
+        margin-right: 1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header, footer {
+    height: 90px;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-top: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 15%;
+    margin: 0 1% 9.5rem;
+    background: rgb(90, 12, 12);
+    height: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    h3, p {
+        margin-bottom: 1.2rem;
+    }
+}
